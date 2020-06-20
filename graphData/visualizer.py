@@ -1,15 +1,20 @@
 import pyodbc
 import pandas as pd
 import matplotlib as plt
-import HrEmployeeData as hr
+from graphData.SalesOrdersData import SalesOrders
 
 
 class Visualizer:
 
-    def __init__(self, hr_employee_data):
-        self.hr_employee_data = hr_employee_data
+    def __init__(self, salesOrder):
+        self.salesOrder = salesOrder
 
-    def generate_hr(self):
-        self.hr_employee_data.
+    def generate_graphs(self):
+        self.salesOrder.generate_graph()
 
 
+if __name__ == '__main__':
+    salesData = SalesOrders()
+
+    v = Visualizer(salesData)
+    v.generate_graphs()

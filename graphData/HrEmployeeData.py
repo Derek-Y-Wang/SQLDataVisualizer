@@ -21,7 +21,7 @@ class HREmployee:
         return self.sql_query
 
 
-
-
 a = HREmployee()
 a.show_table_attributes()
+print(a.show_all_data())
+
